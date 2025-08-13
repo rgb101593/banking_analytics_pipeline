@@ -1,0 +1,27 @@
+# Core Data Analysis
+pandas>=2.3.1
+numpy>=2.3.2
+
+# Visualization
+matplotlib>=3.6.0
+seaborn>=0.13.2
+
+# Jupyter Environment
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+
+# Database Interaction (PostgreSQL)
+# psycopg2-binary is legacy; consider using psycopg3 instead:
+# psycopg[binary]>=3.2.1
+psycopg2-binary>=2.9.9
+SQLAlchemy>=2.0.42
+
+# Configuration Management
+python-dotenv>=1.0.0
+
+# Code Quality & Formatting (Professional)
+black>=25.1.0
+flake8>=7.3.0
+
+# Docker SDK for Python (Optional, for programmatic Docker interaction)
+docker>=7.1.0

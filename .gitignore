@@ -1,3 +1,8 @@
+# Project-specific files
+venv_bank/
+.ipynb_checkpoints/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

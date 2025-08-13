@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgres:16
+    container_name: banking_db
+    restart: always
+    environment: # for reproducibility, use .env and put the variables there
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-default} 
+      POSTGRES_DB: ${DB_NAME:-default_db} 
+    ports:
+      - "${DB_PORT:-5432}:5432" # Map container port 5432 to host port (default 5432)
+    volumes:
+      # Mount a volume for persistent data storage
+      - postgres_data:/var/lib/postgresql/data
+      # Optionally, mount a local directory to run init scripts on container creation
+      # - ./sql:/docker-entrypoint-initdb.d # Uncomment if you have init SQL scripts in ./sql
+    networks:
+      - bank_network
+
+volumes:
+  postgres_data: 
+
+networks:
+  bank_network: 
+    driver: bridge
