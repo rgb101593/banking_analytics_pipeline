@@ -18,45 +18,38 @@ A comprehensive data engineering and analytics project demonstrating skills rele
 *   **Feature Engineering:** Deriving behavioral metrics, categorical encoding, date/time features
 *   **Code Quality:** Black (formatting), Flake8 (linting)
 *   **Project Structure & Documentation:** Professional `README.md`, modular code organization
+## 📂 Project structure
 
-## 📁 Project Structure
-banking_analytics_pipeline/
-│
-├── data/                        # Project datasets
-│   ├── raw/                     # Raw/generated CSV data
-│   └── processed/               # (Planned) Cleaned/transformed datasets
-│
-├── notebooks/                   # Jupyter Notebooks for analysis & documentation
-│   ├── 01_initial_data_exploration.ipynb
-│   ├── 02_advanced_sql_analysis.ipynb
-│   ├── 03_data_cleaning_preparation.ipynb
-│   └── 04_feature_engineering.ipynb
-│
-├── src/                         # Core Python source code
-│   ├── ingestion/               # Data generation & ingestion scripts
-│   │   ├── generate_sample_data.py
-│   │   └── load_data_to_db.py
-│   ├── transformation/          # Data cleaning & feature engineering scripts
-│   ├── analysis/                 # (Planned) Advanced analytics scripts
-│   ├── database/                # Database connection & utilities
-│   │   └── db_connection.py
-│   └── utils/                   # Helper functions & logging utilities
-│
-├── config/                      # Configuration files
-│   └── .env                     # (Excluded from Git) Database credentials & secrets
-│
-├── sql/                         # SQL scripts
-│   └── create_tables.sql
-│
-├── docker/                      # Docker-related files (optional, for complex setups)
-│
-├── tests/                       # (Planned) Unit tests
-│
-├── requirements.txt             # Python dependencies
-├── pyproject.toml               # Project metadata & build configuration
-├── .gitignore                   # Git ignore rules
-├── docker-compose.yml           # Docker service orchestration
-└── README.md                    # Project documentation (this file)
+- **`banking_analytics_pipeline/`**
+  - **`data/`** — Project datasets  
+    - `raw/` — Raw/generated CSVs  
+    - `processed/` — (planned) cleaned/transformed data
+  - **`notebooks/`** — Jupyter notebooks for analysis
+    - `01_initial_data_exploration.ipynb`
+    - `02_advanced_sql_analysis.ipynb`
+    - `03_data_cleaning_preparation.ipynb`
+    - `04_feature_engineering.ipynb`
+  - **`src/`** — Source code
+    - `ingestion/`
+      - `generate_sample_data.py`
+      - `load_data_to_db.py`
+    - `transformation/` — Data cleaning & feature engineering
+    - `analysis/` — (planned) deeper analytics
+    - `database/`
+      - `db_connection.py`
+    - `utils/` — helper modules
+  - **`config/`**
+    - `.env` (excluded from git — secrets)
+  - **`sql/`**
+    - `create_tables.sql`
+  - **`docker/`** — Docker files (optional)
+  - **`tests/`** — Unit tests (planned)
+  - `requirements.txt` — dependencies
+  - `pyproject.toml` — packaging/config
+  - `.gitignore`
+  - `docker-compose.yml`
+  - `README.md` — this file
+
 
 
 ## 📊 Project Workflow & Highlights
