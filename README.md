@@ -22,41 +22,41 @@ A comprehensive data engineering and analytics project demonstrating skills rele
 ## 📁 Project Structure
 banking_analytics_pipeline/
 │
-├── data/ # Data storage
-│ ├── raw/ # Generated raw data (CSVs)
-│ └── processed/ # (Future) Cleaned/transformed data
+├── data/                        # Project datasets
+│   ├── raw/                     # Raw/generated CSV data
+│   └── processed/               # (Planned) Cleaned/transformed datasets
 │
-├── notebooks/ # Jupyter Notebooks (Analysis & Documentation)
-│ ├── 01_initial_data_exploration.ipynb
-│ ├── 02_advanced_sql_analysis.ipynb
-│ ├── 03_data_cleaning_preparation.ipynb
-│ └── 04_feature_engineering.ipynb
+├── notebooks/                   # Jupyter Notebooks for analysis & documentation
+│   ├── 01_initial_data_exploration.ipynb
+│   ├── 02_advanced_sql_analysis.ipynb
+│   ├── 03_data_cleaning_preparation.ipynb
+│   └── 04_feature_engineering.ipynb
 │
-├── src/ # Python source code
-│ ├── ingestion/ # Data generation & loading scripts
-│ │ ├── generate_sample_data.py
-│ │ └── load_data_to_db.py
-│ ├── transformation/ # Data cleaning & feature engineering scripts
-│ ├── analysis/ # (Future) Deeper analysis scripts
-│ ├── database/ # Database connection & utility scripts
-│ │ └── db_connection.py
-│ └── utils/ # Utility functions (logging, helpers)
+├── src/                         # Core Python source code
+│   ├── ingestion/               # Data generation & ingestion scripts
+│   │   ├── generate_sample_data.py
+│   │   └── load_data_to_db.py
+│   ├── transformation/          # Data cleaning & feature engineering scripts
+│   ├── analysis/                 # (Planned) Advanced analytics scripts
+│   ├── database/                # Database connection & utilities
+│   │   └── db_connection.py
+│   └── utils/                   # Helper functions & logging utilities
 │
-├── config/ # Configuration files
-│ └── .env # (Not committed) Database credentials
+├── config/                      # Configuration files
+│   └── .env                     # (Excluded from Git) Database credentials & secrets
 │
-├── sql/ # Raw SQL scripts
-│ └── create_tables.sql
+├── sql/                         # SQL scripts
+│   └── create_tables.sql
 │
-├── docker/ # Docker files (if complex setup needed)
+├── docker/                      # Docker-related files (optional, for complex setups)
 │
-├── tests/ # (Future) Unit tests
+├── tests/                       # (Planned) Unit tests
 │
-├── requirements.txt # Python dependencies
-├── pyproject.toml # Project metadata & build config
-├── .gitignore # Git ignore rules
-├── docker-compose.yml # Docker services orchestration
-└── README.md # This file
+├── requirements.txt             # Python dependencies
+├── pyproject.toml               # Project metadata & build configuration
+├── .gitignore                   # Git ignore rules
+├── docker-compose.yml           # Docker service orchestration
+└── README.md                    # Project documentation (this file)
 
 
 ## 📊 Project Workflow & Highlights
@@ -125,12 +125,3 @@ This project simulates a real-world data analytics workflow, divided into key ph
 5.  **Explore Notebooks:**
     *   Start Jupyter Lab: `jupyter lab`
     *   Open and run the notebooks in the `notebooks/` folder in numerical order.
-
-## 👨‍💻 Author
-
-**Robert Buccat**
-
-*   📧 robert.g.b.101593@gmail.com
-*   📱 +974 5002 0849
-*   📍 Doha, Qatar
-*   [GitHub: rgb101593](https://github.com/rgb101593)
