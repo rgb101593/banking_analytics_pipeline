@@ -23,3 +23,5 @@ flake8>=7.3.0
 
 # Docker SDK for Python (Optional, for programmatic Docker interaction)
 docker>=7.1.0
+
+scipy==1.16.1
