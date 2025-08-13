@@ -10,10 +10,8 @@ seaborn>=0.13.2
 jupyter>=1.0.0
 jupyterlab>=4.0.0
 
-# Database Interaction (PostgreSQL)
-# psycopg2-binary is legacy; consider using psycopg3 instead:
-# psycopg[binary]>=3.2.1
-psycopg2-binary>=2.9.9
+# Database Interaction
+psycopg[binary]>=3.2.9
 SQLAlchemy>=2.0.42
 
 # Configuration Management

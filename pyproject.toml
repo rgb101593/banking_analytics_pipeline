@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "banking_analytics_pipeline"
+version = "0.1.0"
+description = "A demonstration project showcasing data engineering and analytical skills for financial data roles, focusing on a pipeline for banking transaction data."
+readme = "README.md"
+
+dynamic = ["dependencies"] 
+
+[project.optional-dependencies]
+dev = ["black", "flake8"]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
